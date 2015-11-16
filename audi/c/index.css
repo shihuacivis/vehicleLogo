@@ -1,0 +1,139 @@
+/* ==========================================================
+ * index.css v20150911
+ * ==========================================================
+ * shihuacivis@163.com
+ * Audi LOGO 
+ * ========================================================== */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  -webkit-text-size-adjust:none;
+  font-family: 'Helvetica Neue', Helvetica, STHeiTi, sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-wrap {
+  width: 14rem;
+  height: 5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.active .logo-wrap {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+          transition: opacity 1s ease-in;
+}
+
+.logo-circle-wrap {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+}
+
+.logo-circle-wrap.l1 {
+  left: 0rem; 
+}
+.logo-circle-wrap.l2 {
+  left: 3rem; 
+}
+.logo-circle-wrap.l3 {
+  left: 6rem; 
+}
+.logo-circle-wrap.l4 {
+  left: 9rem; 
+}
+
+.circle-fir {
+  display: block;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: .05rem solid #6f6f6f;
+  background-color: #ebebeb;
+  background-image: linear-gradient(15deg, #000000 .5%, transparent 35%);
+}
+
+.circle-fir .circle-sec {
+  color: #232323;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: .1rem solid #efefef;
+  background-image: linear-gradient(33deg, #888888 10%, #454545 66.7%, transparent);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.circle-fir .circle-thi {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.logo-circle-wrap.part{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    overflow: hidden;
+    -webkit-transform: translate(-3.75rem, -.7rem);
+            transform: translate(-3.75rem, -.7rem);
+}
+
+.wrap .info {
+  position: absolute;
+  color: #818181;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.wrap .info p {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  opacity: 0;
+}
+
+.wrap .info span {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 0;
+  opacity: 0;
+}
+
+.active .info p {
+  opacity: 1;
+  -webkit-transition: opacity 1s 1s ease-in;
+          transition: opacity 1s 1s ease-in;
+}
+
+.active .info span {
+  opacity: 1;
+  -webkit-transition: opacity .3s 3s ease-in;
+          transition: opacity .3s 3s ease-in;
+}

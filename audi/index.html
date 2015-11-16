@@ -1,0 +1,103 @@
+<!-- 
+  audi logo drawn by css3
+  shihua
+  2015/09/11
+-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <title>Audi</title>
+  <link rel="stylesheet" href="c/base.css">
+  <link rel="stylesheet" href="c/index.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo-wrap">
+      
+      <div class="logo-circle-wrap l1">
+        <div class="circle-fir">
+          <div class="circle-sec">
+            <div class="circle-thi"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-circle-wrap l2">
+        <div class="circle-fir">
+          <div class="circle-sec">
+            <div class="circle-thi">
+              <!-- 第一个环的右半部分 -->
+              <div class="logo-circle-wrap part part1">
+                <div class="circle-fir">
+                  <div class="circle-sec">
+                    <div class="circle-thi"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- 第一个环的右半部分 end -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-circle-wrap l3">
+        <div class="circle-fir">
+          <div class="circle-sec">
+            <div class="circle-thi">
+              <!-- 第二个环的右半部分 -->
+              <div class="logo-circle-wrap part part2">
+                <div class="circle-fir">
+                  <div class="circle-sec">
+                    <div class="circle-thi"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- 第二个环的右半部分 end -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-circle-wrap l4">
+        <div class="circle-fir">
+          <div class="circle-sec">
+            <div class="circle-thi">
+              <!-- 第三个环的右半部分 -->
+              <div class="logo-circle-wrap part part3">
+                <div class="circle-fir">
+                  <div class="circle-sec">
+                    <div class="circle-thi"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- 第三个环的右半部分 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="info">
+      <p>Powered by CSS3</p>
+      <span>© shihua</span>
+    </div>
+
+  </div>
+</body>
+<script>
+  var wid = document.body.clientWidth;
+  wid = +wid > 450 ? 450 : wid;
+  var p = (wid / 360) * 20;
+  document.getElementsByTagName('html')[0]['style']['fontSize'] = p + 'px';
+  setTimeout(function () {
+    $el = document.querySelector('.wrap');
+    $el.className += ' active'; 
+  }, 500);
+</script>
+</html>

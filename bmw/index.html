@@ -1,0 +1,57 @@
+<!-- 
+  audi logo drawn by css3
+  shihua
+  2015/09/11
+-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <title>BMW</title>
+  <link rel="stylesheet" href="c/base.css">
+  <link rel="stylesheet" href="c/index.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo-wrap">
+
+    <div class="cirle-one">
+      <div class="cirle-two">
+        <div class="b">B</div>
+        <div class="m">M</div>
+        <div class="w">W</div>
+        <div class="circle-three">
+          <div class="circle-four">
+            <div class="block-one"></div>
+            <div class="block-two"></div>
+            <div class="block-three"></div>
+            <div class="block-four"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="info">
+      <p>Powered by CSS3</p>
+      <span>© shihua</span>
+    </div>
+
+  </div>
+</body>
+<script>
+  var wid = document.body.clientWidth;
+  wid = +wid > 450 ? 450 : wid;
+  var p = (wid / 360) * 20;
+  document.getElementsByTagName('html')[0]['style']['fontSize'] = p + 'px';
+  setTimeout(function () {
+    $el = document.querySelector('.wrap');
+    $el.className += ' active'; 
+  }, 0);
+</script>
+</html>
