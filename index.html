@@ -6,32 +6,43 @@
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black" name="apple-mobile-web-app-status-bar-style" />
   <meta content="telephone=no" name="format-detection" />
-  <title>my favourite vehicle Logo</title>
+  <title>CSS3 CAR LOGO</title>
   <link rel="stylesheet" href="audi/c/base.css">
   <style type="text/css">
-    .wrap {
-      height: 50px;
-      border-bottom: 5px solid #cccccc;
-      padding: 10px 30px;
+    html {
+      font-size: 100px;
+    }
+    .page-wrap {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .nav-wrap {
+      height: .5rem;
+      border-bottom: .05rem solid #cccccc;
+      padding: .05rem .3rem;
     }
     .btn {
-      border: 2px solid #818181;
+      border: .02rem solid #818181;
       background: #fff;
-      margin-right: 20px;
-      padding: 0 10px;
+      margin-right: .2rem;
+      padding: 0 .1rem;
+      height: .3rem;
+      line-height: .3rem;
     }
     .btn.active {
-      border: 2px solid rgb(107, 194, 53);
+      border: .02rem solid rgb(107, 194, 53);
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <button class="btn active" data-url="benz/index.html">benz</button>
-    <button class="btn" data-url="bmw/index.html">bmw</button>
-    <button class="btn" data-url="audi/index.html">audi</button>
+  <div class="page-wrap">
+    <div class="nav-wrap">
+      <button class="btn active" data-url="benz/index.html">benz</button>
+      <button class="btn" data-url="bmw/index.html">bmw</button>
+      <button class="btn" data-url="audi/index.html">audi</button>
+    </div>
+    <iframe src="" style="width:100%;height:100%" frameborder="0"></iframe>
   </div>
-  <iframe src="benz/index.html" style="width:100%;height:100%" frameborder="0"></iframe>
 </body>
 <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
 <script>
@@ -41,14 +52,11 @@
     $(this).addClass('active');
     $('iframe').attr('src', url);
   })
-  $('iframe').height($(window).height() - 50);
   var wid = document.body.clientWidth;
-  wid = +wid > 450 ? 360 : wid;
-  var p = (wid / 360) * 20;
+  wid = +wid > 480 ? 480 : wid;
+  var p = (wid / 360) * 100;
   document.getElementsByTagName('html')[0]['style']['fontSize'] = p + 'px';
-  setTimeout(function () {
-    $el = document.querySelector('.wrap');
-    $el.className += ' active'; 
-  }, 500);
+  $('iframe').height($(window).height() - (wid / 360) * 50);
+  $('iframe').attr('src', 'benz/index.html');
 </script>
 </html>

@@ -92,12 +92,12 @@
 </body>
 <script>
   var wid = document.body.clientWidth;
-  wid = +wid > 450 ? 450 : wid;
+  wid = +wid > 450 ? 360 : wid;
   var p = (wid / 360) * 20;
   document.getElementsByTagName('html')[0]['style']['fontSize'] = p + 'px';
   setTimeout(function () {
     $el = document.querySelector('.wrap');
-    $el.className += ' active'; 
+    $el.className += ' active';
   }, 500);
 </script>
 </html>
