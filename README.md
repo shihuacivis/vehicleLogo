@@ -4,10 +4,10 @@
 - 奔驰 BENZ
 - 宝马 BMW
 - 奥迪 AUDI
+- 丰田 TOYOTA
 
 
 COMMING SOON:
-- TOYOTA
 - HONDA
 - MAZIDA
 - NISSAN

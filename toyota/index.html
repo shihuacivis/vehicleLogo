@@ -1,0 +1,62 @@
+<!-- 
+  benz logo drawn by css3
+  shihua
+  2015/11/18
+-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <title>benz</title>
+  <link rel="stylesheet" href="c/base.css">
+  <link rel="stylesheet" href="c/index.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo-wrap">
+      <div class="circle-fir">
+        <div class="circle-sec">
+          <div class="circle-thi">
+          </div>
+        </div>
+      </div>
+      <div class="cir-top-wrap">
+        <div class="cir-top-mid">
+          <div class="cir-top-in">
+            <div class="cir-mid-wrap">
+              <div class="cir-mid-mid">
+                <div class="cir-mid-in"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cir-mid-wrap">
+        <div class="cir-mid-mid">
+          <div class="cir-mid-in"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <p>Powered by CSS3</p>
+      <span>© shihua</span>
+    </div>
+
+  </div>
+</body>
+<script>
+  var wid = document.body.clientWidth;
+  wid = +wid > 450 ? 360 : wid;
+  var p = (wid / 360) * 20;
+  document.getElementsByTagName('html')[0]['style']['fontSize'] = p + 'px';
+  setTimeout(function () {
+    $el = document.querySelector('.wrap');
+    $el.className += ' active';
+  }, 500);
+</script>
+</html>
