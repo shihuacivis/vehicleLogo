@@ -11,3 +11,5 @@ COMMING SOON:
 - HONDA
 - MAZIDA
 - NISSAN
+
+[预览地址](http://demo.shihua.im/vehicleLogo/index.html)
