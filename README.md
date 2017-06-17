@@ -12,4 +12,4 @@ COMMING SOON:
 - MAZIDA
 - NISSAN
 
-[预览地址](http://demo.shihua.im/vehicleLogo/index.html)
+[预览地址](http://shiwah.me/vehicleLogo/index.html)
